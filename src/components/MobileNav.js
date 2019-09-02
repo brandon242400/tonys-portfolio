@@ -66,7 +66,7 @@ function getNotClicked() {
       height: 400px;
       animation: shrink .5s;
       animation-fill-mode: forwards;
-      animation-delay: 0.1s;
+      animation-delay: 0.25s;
 
       @keyframes shrink {
         from {

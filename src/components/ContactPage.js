@@ -36,7 +36,6 @@ export default class ContactPage extends Component {
 
 const Wrapper = styled.div`
   text-align: center;
-  margin-top: 100px;
 
   .contact-title {
     font-family: 'Permanent Marker', cursive;
@@ -49,11 +48,6 @@ const Wrapper = styled.div`
   }
 
   .personal-contact-info {
-    // border: 4px solid black;
-    border-radius: 50px;
-    width: fit-content;
-    padding-left: 25px;
-    padding-right: 25px;
     margin: 0 auto 150px auto;
   }
 
@@ -76,5 +70,35 @@ const Wrapper = styled.div`
   .shop-info h3 {
     font-family: cursive;
     font-size: 125%;
+  }
+
+  @media (max-width: 800px) {
+
+    .contact-title {
+      font-size: 6vw;
+      border: 3px solid black;
+      margin: 50px auto 50px auto;
+      padding: 15px 30px;
+    }
+  
+    .personal-contact-info {
+      margin: 0 auto 100px auto;
+    }
+  
+    .personal-contact-info h2 {
+      text-align: center;
+      font-family: 'just another hand', cursive;
+      font-size: 6vw;
+    }
+  
+    .shop-info h2 {
+      font-size: 5vw;
+      border: 3px solid black;
+      border-radius: 20px;
+    }
+  
+    .shop-info h3 {
+      font-size: 2.5vw;
+    }
   }
 `;

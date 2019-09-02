@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { Map, GoogleApiWrapper, InfoWindow, Marker } from 'google-maps-react';
 
 const mapStyles = {
-  width: '40vw',
-  height: '50vh',
-  margin: '0 auto',
+  width: '50vw',
+  height: '50vw',
+  margin: '10px auto',
   border: '5px solid black',
   borderRadius: '40px'
 };

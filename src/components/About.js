@@ -35,7 +35,6 @@ const Wrapper = styled.div`
 
   .about-pic-container {
     display: flex;
-    // border: 3px solid black;
   }
 
   .about-pic-container img {
@@ -59,5 +58,29 @@ const Wrapper = styled.div`
     padding: 20px;
     border: 3px solid black;
     border-radius: 50px;
+  }
+
+  @media (max-width: 800px) {
+    margin-top: 50px;
+    
+    .about-title {
+      font-size: 6vw;
+      border: 3px solid black;
+      margin: 50px auto 50px auto;
+      padding: 15px 30px;
+    }
+
+    .about-pic-container img {
+      width: 40vw;
+      border-radius: 30px;
+    }
+
+    .about-pic-container p {
+      font-size: 4vw;
+      width: 40vw;
+      padding: 10px;
+      border: 2px solid black;
+      border-radius: 25px;
+    }
   }
 `;

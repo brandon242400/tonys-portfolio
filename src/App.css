@@ -3,15 +3,6 @@ body {
   background-attachment: fixed;
 }
 
-@viewport {
-  width: device-width;
-  zoom: 1.0;
-}
-
-@-ms-viewport {
-  width: device-width;
-}
-
 
 /* Fonts:
 font-family: 'Permanent Marker', cursive;
@@ -24,11 +15,3 @@ font-family: 'Just Another Hand', cursive; */
     > 1200px
 */
 
-/* .close-nav {
-  z-index: -10;
-  background-color: #99f;
-  opacity: 0.5;
-  width: 200vw;
-  height: 100vh;
-  position: fixed;
-} */

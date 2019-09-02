@@ -27,7 +27,7 @@ const Wrapper = styled.div`
     border: 5px solid black;
     border-radius: 50px;
     height: fit-content;
-    width: 50%;
+    width: 50vw;
     margin: 0 auto;
   }
 
@@ -50,5 +50,22 @@ const Wrapper = styled.div`
     max-width: 600px;
     max-height: 600px;
     object-fit: scale-down;
+  }
+
+  @media (max-width: 800px) {
+
+    .text-container {
+      border: 3px solid black;
+      border-radius: 25px;
+      width: 65vw;
+    }
+
+    .text-container p {
+      font-size: 5vw;
+    }
+
+    .pic-container img {
+      max-width: 60vw;
+    }
   }
 `;

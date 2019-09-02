@@ -20,34 +20,61 @@ export default function Introduction() {
   )
 }
 
-const Wrapper = styled.div`
-  text-align: center;
+const Wrapper = getStyles();
+function getStyles() {
+  return( styled.div`
+    text-align: center;
 
-  .tony-name {
-    font-family: 'Permanent Marker', cursive;
-    font-size: 400%;
-    margin: 25px;
-  }
+    .tony-name {
+      font-family: 'Permanent Marker', cursive;
+      font-size: 400%;
+      margin: 25px;
+    }
   
-  .name-title h2 {
-    font-family: 'Permanent Marker', cursive;
-    font-size: 200%;
-  }
-  
-  .home-introduction {
-    font-family: 'Just Another Hand', cursive;
-    margin: 50px auto 150px auto;
-    width: 50vw;
-    font-size: 250%;
-  }
-  
-  .name-title {
-    border: 5px solid black;
-    border-radius: 50px;
-    margin: 100px auto 0 auto;
-    width: fit-content;
-  }
-`;
+    .name-title h2 {
+      font-family: 'Permanent Marker', cursive;
+      font-size: 200%;
+    }
+    
+    .home-introduction {
+      font-family: 'Just Another Hand', cursive;
+      margin: 50px auto 150px auto;
+      width: 50vw;
+      font-size: 250%;
+    }
+    
+    .name-title {
+      border: 5px solid black;
+      border-radius: 50px;
+      margin: 100px auto 0 auto;
+      width: fit-content;
+    }
+
+    @media (max-width: 800px) {
+      .name-title {
+        border: 3px solid black;
+        border-radius: 30px;
+        margin: 50px auto 0 auto;
+      }
+
+      .tony-name {
+        font-size: 6vw;
+        margin: 25px 25px 0 25px;
+      }
+
+      .name-title h2 {
+        font-size: 3vw;
+      }
+
+      .home-introduction {
+        margin: 40px auto 100px auto;
+        width: 75vw;
+        font-size: 200%;
+      }
+    }
+  `
+  )
+}
 
 
 var fillerText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio aspernatur vitae fuga ipsa, quae dolore voluptas dolores tempore eveniet dignissimos animi ex dicta assumenda obcaecati, est rerum soluta consectetur quo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio aspernatur vitae fuga ipsa, quae dolore voluptas dolores tempore eveniet dignissimos animi ex dicta assumenda obcaecati, est rerum soluta consectetur quo?';

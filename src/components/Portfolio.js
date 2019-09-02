@@ -21,6 +21,7 @@ export default class Portfolio extends Component {
     return images;
   }
 
+  // Scrolls to the top of the page when page is selected from the navigation bar
   componentDidMount() {
     setTimeout(() => {
       window.scrollTo(0, 0)
@@ -30,7 +31,7 @@ export default class Portfolio extends Component {
   render() {
     let items = [];
     // Filling 'items' array with image elements to show on the portfolio page
-    for (let x = 0; x < this.imageKeys.length; x++) {
+    for (let x = 0; x < /* this.imageKeys.length */ 50; x++) {
       items.push(
         <div className='portfolio-picture-container' >
           <a href={this.allImages[this.imageKeys[x]]} target='new'>
@@ -64,7 +65,6 @@ function createStyled() {
   return (
     styled.div`
     text-align: center;
-    margin-top: 100px;
 
     .portfolio-title {
       font-family: 'Permanent Marker', cursive;
@@ -124,19 +124,28 @@ function createStyled() {
     }
     
     @media (max-width: 1400px) {
+
       .portfolio-pictures {
         border: 3px solid black;
         border-radius: 25px;
       }
     
       .portfolio-picture-container {
-        width: 250px;
+        width: 200px;
       }
-    
+    }
+
+    @media (max-width: 800px) {
+
       .portfolio-title {
-        font-size: 200%;
+        font-size: 6vw;
         border: 3px solid black;
-        padding: 15px 30px
+        margin: 50px auto 50px auto;
+        padding: 15px 30px;
+      }
+
+      .portfolio-pictures {
+        margin-top: 50px;
       }
     }
   `);
