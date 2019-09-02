@@ -50,5 +50,4 @@ const Wrapper = styled.div`
 `;
 
 
-
 var fillerText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio aspernatur vitae fuga ipsa, quae dolore voluptas dolores tempore eveniet dignissimos animi ex dicta assumenda obcaecati, est rerum soluta consectetur quo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio aspernatur vitae fuga ipsa, quae dolore voluptas dolores tempore eveniet dignissimos animi ex dicta assumenda obcaecati, est rerum soluta consectetur quo?';
